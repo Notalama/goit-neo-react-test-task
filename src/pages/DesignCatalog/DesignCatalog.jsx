@@ -5,7 +5,7 @@ import Tag from "../../components/common/Tag/Tag";
 import Favourite from "../../components/common/Favourite/Favourite";
 import Input from "../../components/common/Input/Input";
 import Loader from "../../components/common/Loader/Loader";
-import RatingStars from "../../components/composite/RatingStars/RatingStars";
+import RatingStars from "../../components/composite/Rating/Rating";
 import PriceDisplay from "../../components/composite/PriceDisplay/PriceDisplay";
 import LocationInfo from "../../components/composite/LocationInfo/LocationInfo";
 import ReviewSummary from "../../components/composite/ReviewSummary/ReviewSummary";
@@ -14,10 +14,10 @@ import LocationInput from "../../components/composite/LocationInput/LocationInpu
 import ReviewCard from "../../components/composite/ReviewCard/ReviewCard";
 import ToggleButton from "../../components/composite/ToggleButton/ToggleButton";
 import FeatureDetailsCard from "../../components/features/FeatureDetailsCard/FeatureDetailsCard";
-import BookingFormCard from "../../components/features/BookingFormCard/BookingFormCard";
+import BookingCard from "../../components/features/BookingCard/BookingCard";
 import VehicleCard from "../../components/features/VehicleCard/VehicleCard";
 import { FiltersSidebar } from "../../components/features/FiltersSidebar/FiltersSidebar";
-import styles from "./DesignCatalog.module.css";
+ 
 
 const DesignCatalog = () => {
   // Sample data for components
@@ -59,100 +59,100 @@ const DesignCatalog = () => {
   };
 
   return (
-    <div className={styles.catalog}>
+    <div className="min-h-screen">
       <AppNavigation />
-      <div className={styles.content}>
-        <h1>Design System Catalog</h1>
+      <div className="max-w-[1200px] mx-auto px-4 md:px-6 xl:px-8 pt-[calc(72px+1rem)] md:pt-[calc(72px+1.5rem)] xl:pt-[calc(72px+2rem)]">
+        <h1 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 text-center">Design System Catalog</h1>
 
-        <section className={styles.section}>
-          <h2>Color Palette</h2>
-          <div className={styles.row}>
-            <div className={styles.colorBox}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Color Palette</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-main)" }}
               ></div>
-              <span>Main</span>
-              <code>#101828</code>
+              <span className="font-medium text-sm">Main</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#101828</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-text)" }}
               ></div>
-              <span>Text</span>
-              <code>#475467</code>
+              <span className="font-medium text-sm">Text</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#475467</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-gray)" }}
               ></div>
-              <span>Gray</span>
-              <code>#6C717B</code>
+              <span className="font-medium text-sm">Gray</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#6C717B</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-gray-light)" }}
               ></div>
-              <span>Gray Light</span>
-              <code>#DADDE1</code>
+              <span className="font-medium text-sm">Gray Light</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#DADDE1</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-button)" }}
               ></div>
-              <span>Button</span>
-              <code>#E44848</code>
+              <span className="font-medium text-sm">Button</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#E44848</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-button-hover)" }}
               ></div>
-              <span>Button Hover</span>
-              <code>#D84343</code>
+              <span className="font-medium text-sm">Button Hover</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#D84343</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-rating)" }}
               ></div>
-              <span>Rating</span>
-              <code>#FFC531</code>
+              <span className="font-medium text-sm">Rating</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#FFC531</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-badges)" }}
               ></div>
-              <span>Badges</span>
-              <code>#F2F4F7</code>
+              <span className="font-medium text-sm">Badges</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#F2F4F7</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-inputs)" }}
               ></div>
-              <span>Inputs</span>
-              <code>#F7F7F7</code>
+              <span className="font-medium text-sm">Inputs</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#F7F7F7</code>
             </div>
-            <div className={styles.colorBox}>
+            <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
-                className={styles.colorSample}
+                className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-white)" }}
               ></div>
-              <span>White</span>
-              <code>#FFFFFF</code>
+              <span className="font-medium text-sm">White</span>
+              <code className="text-xs text-[var(--color-neutral-300)] font-mono">#FFFFFF</code>
             </div>
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Buttons</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Buttons</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <Button variant="primary">Primary Button</Button>
             <Button variant="secondary">Secondary Button</Button>
             <Button variant="primary" size="sm">
@@ -164,9 +164,9 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Icons</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Icons</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <Icon name="heart" />
             <Icon name="heart" variant="filled" />
             <Icon name="star" />
@@ -179,9 +179,9 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Tags</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Tags</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <Tag icon="automatic">Automatic</Tag>
             <Tag icon="ac">AC</Tag>
             <Tag icon="kitchen">Kitchen</Tag>
@@ -190,17 +190,17 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Favourite</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Favourite</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <Favourite isActive={false} />
             <Favourite isActive={true} />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Rating Stars</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Rating Stars</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <RatingStars rating={0} />
             <RatingStars rating={2.5} />
             <RatingStars rating={4} />
@@ -208,59 +208,59 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Inputs</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Inputs</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <Input placeholder="Name" />
             <Input placeholder="Email" type="email" />
             <Input placeholder="Comment" multiline />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Price Display</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Price Display</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <PriceDisplay amount={8000} />
             <PriceDisplay amount={12500} />
             <PriceDisplay amount={999.99} />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Location Info</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Location Info</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <LocationInfo location="Ukraine, Kyiv" />
             <LocationInfo location="Poland, Warsaw" />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Review Summary</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Review Summary</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <ReviewSummary rating={4.5} reviewCount={42} />
             <ReviewSummary rating={3.8} reviewCount={15} showLink={false} />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Location Input</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Location Input</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <LocationInput placeholder="City" />
             <LocationInput placeholder="City" value="Kyiv, Ukraine" />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Date Picker</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Date Picker</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <DatePicker placeholder="Booking date*" />
             <DatePicker placeholder="Check-in date" selectedDate={new Date()} />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Toggle Buttons</h2>
-          <div className={styles.row}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Toggle Buttons</h2>
+          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
             <ToggleButton icon="van">Van</ToggleButton>
             <ToggleButton icon="intergrated" isSelected>
               Fully Integrated
@@ -269,25 +269,25 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Feature Details Card</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Feature Details Card</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <FeatureDetailsCard camper={sampleCamper} />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Loader</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Loader</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <Loader />
             <Loader text="Loading campers..." />
             <Loader size={24} text="Please wait..." />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Review Card</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Review Card</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <ReviewCard
               reviewerName="Alice"
               rating={5}
@@ -301,18 +301,18 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Booking Form Card</h2>
-          <div className={styles.column}>
-            <BookingFormCard
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Booking Form Card</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
+            <BookingCard
               onSubmit={(values) => console.log("Booking submitted:", values)}
             />
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Vehicle Card</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Vehicle Card</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <VehicleCard
               camper={sampleCamper}
               onShowMore={(id) =>
@@ -322,9 +322,9 @@ const DesignCatalog = () => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2>Filters Sidebar</h2>
-          <div className={styles.column}>
+        <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
+          <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Filters Sidebar</h2>
+          <div className="flex flex-col items-start gap-2 md:gap-4">
             <FiltersSidebar />
           </div>
         </section>
