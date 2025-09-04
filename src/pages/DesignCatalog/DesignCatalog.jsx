@@ -62,17 +62,17 @@ const DesignCatalog = () => {
     <div className="min-h-screen">
       <AppNavigation />
       <div className="max-w-[1200px] mx-auto px-4 md:px-6 xl:px-8 pt-[calc(72px+1rem)] md:pt-[calc(72px+1.5rem)] xl:pt-[calc(72px+2rem)]">
-        <h1 className="text-2xl md:text-3xl font-semibold mb-6 md:mb-8 text-center">Design System Catalog</h1>
+        <h1 className="mb-6 text-2xl font-semibold text-center md:text-3xl md:mb-8">Design System Catalog</h1>
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Color Palette</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
               <div
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-main)" }}
               ></div>
-              <span className="font-medium text-sm">Main</span>
+              <span className="text-sm font-medium">Main</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#101828</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -80,7 +80,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-text)" }}
               ></div>
-              <span className="font-medium text-sm">Text</span>
+              <span className="text-sm font-medium">Text</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#475467</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -88,7 +88,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-gray)" }}
               ></div>
-              <span className="font-medium text-sm">Gray</span>
+              <span className="text-sm font-medium">Gray</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#6C717B</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -96,7 +96,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-gray-light)" }}
               ></div>
-              <span className="font-medium text-sm">Gray Light</span>
+              <span className="text-sm font-medium">Gray Light</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#DADDE1</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -104,7 +104,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-button)" }}
               ></div>
-              <span className="font-medium text-sm">Button</span>
+              <span className="text-sm font-medium">Button</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#E44848</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -112,7 +112,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-button-hover)" }}
               ></div>
-              <span className="font-medium text-sm">Button Hover</span>
+              <span className="text-sm font-medium">Button Hover</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#D84343</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -120,7 +120,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-rating)" }}
               ></div>
-              <span className="font-medium text-sm">Rating</span>
+              <span className="text-sm font-medium">Rating</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#FFC531</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -128,7 +128,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-badges)" }}
               ></div>
-              <span className="font-medium text-sm">Badges</span>
+              <span className="text-sm font-medium">Badges</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#F2F4F7</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -136,7 +136,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-inputs)" }}
               ></div>
-              <span className="font-medium text-sm">Inputs</span>
+              <span className="text-sm font-medium">Inputs</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#F7F7F7</code>
             </div>
             <div className="flex flex-col items-center gap-1 p-4 border border-[var(--color-neutral-300)] rounded-lg min-w-[80px] sm:min-w-[100px] md:min-w-[120px]">
@@ -144,7 +144,7 @@ const DesignCatalog = () => {
                 className="w-10 h-10 md:w-[60px] md:h-[60px] rounded-lg border border-[var(--color-neutral-300)]"
                 style={{ backgroundColor: "var(--color-white)" }}
               ></div>
-              <span className="font-medium text-sm">White</span>
+              <span className="text-sm font-medium">White</span>
               <code className="text-xs text-[var(--color-neutral-300)] font-mono">#FFFFFF</code>
             </div>
           </div>
@@ -152,7 +152,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Buttons</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <Button variant="primary">Primary Button</Button>
             <Button variant="secondary">Secondary Button</Button>
             <Button variant="primary" size="sm">
@@ -166,7 +166,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Icons</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <Icon name="heart" />
             <Icon name="heart" variant="filled" />
             <Icon name="star" />
@@ -181,7 +181,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Tags</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <Tag icon="automatic">Automatic</Tag>
             <Tag icon="ac">AC</Tag>
             <Tag icon="kitchen">Kitchen</Tag>
@@ -192,7 +192,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Favourite</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <Favourite isActive={false} />
             <Favourite isActive={true} />
           </div>
@@ -200,7 +200,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Rating Stars</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <RatingStars rating={0} />
             <RatingStars rating={2.5} />
             <RatingStars rating={4} />
@@ -210,7 +210,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Inputs</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <Input placeholder="Name" />
             <Input placeholder="Email" type="email" />
             <Input placeholder="Comment" multiline />
@@ -219,7 +219,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Price Display</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <PriceDisplay amount={8000} />
             <PriceDisplay amount={12500} />
             <PriceDisplay amount={999.99} />
@@ -228,7 +228,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Location Info</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <LocationInfo location="Ukraine, Kyiv" />
             <LocationInfo location="Poland, Warsaw" />
           </div>
@@ -236,7 +236,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Review Summary</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <ReviewSummary rating={4.5} reviewCount={42} />
             <ReviewSummary rating={3.8} reviewCount={15} showLink={false} />
           </div>
@@ -244,7 +244,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Location Input</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <LocationInput placeholder="City" />
             <LocationInput placeholder="City" value="Kyiv, Ukraine" />
           </div>
@@ -252,7 +252,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Date Picker</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <DatePicker placeholder="Booking date*" />
             <DatePicker placeholder="Check-in date" selectedDate={new Date()} />
           </div>
@@ -260,7 +260,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Toggle Buttons</h2>
-          <div className="flex items-center gap-1 sm:gap-2 md:gap-4 flex-wrap">
+          <div className="flex flex-wrap gap-1 items-center sm:gap-2 md:gap-4">
             <ToggleButton icon="van">Van</ToggleButton>
             <ToggleButton icon="intergrated" isSelected>
               Fully Integrated
@@ -271,14 +271,14 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Feature Details Card</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <FeatureDetailsCard camper={sampleCamper} />
           </div>
         </section>
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Loader</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <Loader />
             <Loader text="Loading campers..." />
             <Loader size={24} text="Please wait..." />
@@ -287,7 +287,7 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Review Card</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <ReviewCard
               reviewerName="Alice"
               rating={5}
@@ -303,28 +303,23 @@ const DesignCatalog = () => {
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Booking Form Card</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
-            <BookingCard
-              onSubmit={(values) => console.log("Booking submitted:", values)}
-            />
+          <div className="flex flex-col gap-2 items-start md:gap-4">
+            <BookingCard />
           </div>
         </section>
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Vehicle Card</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <VehicleCard
               camper={sampleCamper}
-              onShowMore={(id) =>
-                console.log(`Show more clicked for camper: ${id}`)
-              }
             />
           </div>
         </section>
 
         <section className="mb-8 md:mb-12 p-4 md:p-6 border border-[var(--color-neutral-300)] rounded-[20px]">
           <h2 className="mb-6 text-[var(--color-primary-500)] font-semibold">Filters Sidebar</h2>
-          <div className="flex flex-col items-start gap-2 md:gap-4">
+          <div className="flex flex-col gap-2 items-start md:gap-4">
             <FiltersSidebar />
           </div>
         </section>
