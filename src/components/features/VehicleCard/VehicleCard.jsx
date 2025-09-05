@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import PriceDisplay from "../../composite/PriceDisplay/PriceDisplay";
-import LocationInfo from "../../composite/LocationInfo/LocationInfo";
-import ReviewSummary from "../../composite/ReviewSummary/ReviewSummary";
+import PriceDisplay from "../../composables/PriceDisplay/PriceDisplay";
+import LocationInfo from "../../composables/LocationInfo/LocationInfo";
+import ReviewSummary from "../../composables/ReviewSummary/ReviewSummary";
 import Tag from "../../common/Tag/Tag";
 import Favourite from "../../common/Favourite/Favourite";
 import Button from "../../common/Button/Button";

@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Button from "../../common/Button/Button";
-import LocationInput from "../../composite/LocationInput/LocationInput";
-import ToggleButton from "../../composite/ToggleButton/ToggleButton";
+import LocationInput from "../../composables/LocationInput/LocationInput";
+import ToggleButton from "../../composables/ToggleButton/ToggleButton";
 import {
   selectLocationFilter,
   selectEquipmentFilters,

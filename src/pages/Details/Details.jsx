@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import AppNavigation from "../../components/features/AppNavigation/AppNavigation";
-import ReviewSummary from "../../components/composite/ReviewSummary/ReviewSummary";
-import LocationInfo from "../../components/composite/LocationInfo/LocationInfo";
-import PriceDisplay from "../../components/composite/PriceDisplay/PriceDisplay";
+import ReviewSummary from "../../components/composables/ReviewSummary/ReviewSummary";
+import LocationInfo from "../../components/composables/LocationInfo/LocationInfo";
+import PriceDisplay from "../../components/composables/PriceDisplay/PriceDisplay";
 import FeatureDetailsCard from "../../components/features/FeatureDetailsCard/FeatureDetailsCard";
 import BookingCard from "../../components/features/BookingCard/BookingCard";
-import ReviewCard from "../../components/composite/ReviewCard/ReviewCard";
+import ReviewCard from "../../components/composables/ReviewCard/ReviewCard";
 import Loader from "../../components/common/Loader/Loader";
 import ImageModal from "../../components/common/ImageModal/ImagePreview";
 import {
